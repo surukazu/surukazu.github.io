@@ -14,7 +14,7 @@ $(function () {
   $(".nav-button").click(function () {
     $(".header__nav").fadeToggle();
     // #hamburgerにactiveクラスがあれば削除し、なければ追加する
-    $(this).toggleClass("active");
+    $("#hamburger").toggleClass("active");
     // bodyにactiveクラスがあれば削除し、なければ追加する
     $("body").toggleClass("hidden");
   });

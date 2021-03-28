@@ -40,7 +40,7 @@ body {
 .section-title {
   font-size: 32px;
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .section-sub-title {
   color: $subColor;
@@ -91,7 +91,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     @media screen and (max-width: 768px) {
       display: none;
     }
@@ -159,7 +159,7 @@ body {
     font-size: 32px;
     margin-bottom: 50px;
     line-height: 43px;
-    font-weight: bold;
+    font-weight: 700;
     width: 360px;
     @media screen and (max-width: 768px) {
       margin-right: auto;
@@ -170,7 +170,7 @@ body {
   &__text {
     margin-bottom: 55px;
     line-height: 21px;
-    font-weight: bold;
+    font-weight:700 
   }
 
   &__image {
@@ -229,7 +229,7 @@ body {
 
   &-container_title {
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 50px;
   }
 
@@ -269,7 +269,7 @@ body {
   padding-top: 55px;
   padding-bottom: 69px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
 
   &__table {
     background-color: #fff;
@@ -279,7 +279,7 @@ body {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
     border-collapse: collapse; /* セルの線を重ねる */
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 38px;
     @media screen and(max-width:920px) {
       width: 80vw;

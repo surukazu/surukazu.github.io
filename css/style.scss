@@ -1,11 +1,13 @@
 @charset "UTF-8";
 
+
+
 $contactColor: linear-gradient(to right, #fa41cc, #6020b0);
 $color: #333333;
 $subColor: #3ba6c9;
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   @media screen and(max-width:780px) {
     overflow-x: hidden !important;
   }
@@ -72,9 +74,12 @@ body {
     margin-right: 15px;
   }
 
-  &__logo {
+  &__logo{
     display: flex;
     align-items: center;
+    & h1{
+      color: #333;
+    }
   }
 
   &__title {
@@ -355,7 +360,7 @@ body {
   }
 
   &__box {
-    width: 360px;
+    width: 389px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
     @media screen and(max-width:1110px) {
       margin: 0;
@@ -374,15 +379,16 @@ body {
     background-color: #fff;
     height: 127px;
     padding-top: 16px;
-    padding-left: 18px;
     text-align: left;
     position: relative;
     color: #000;
+    padding-left: 18px;
   }
 
   &__text {
     font-size: 18px;
     line-height: 26px;
+    max-width: 284px;
   }
 
   &__date {

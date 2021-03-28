@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 @media screen and (max-width: 780px) {
@@ -87,6 +87,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__logo h1 {
+  color: #333;
 }
 
 .header__title {
@@ -430,7 +434,7 @@ body {
 }
 
 .blog__box {
-  width: 360px;
+  width: 389px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
@@ -453,15 +457,16 @@ body {
   background-color: #fff;
   height: 127px;
   padding-top: 16px;
-  padding-left: 18px;
   text-align: left;
   position: relative;
   color: #000;
+  padding-left: 18px;
 }
 
 .blog__text {
   font-size: 18px;
   line-height: 26px;
+  max-width: 284px;
 }
 
 .blog__date {

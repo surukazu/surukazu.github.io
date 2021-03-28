@@ -290,6 +290,7 @@ body, html {
 
 .features-container_title {
   font-size: 28px;
+  line-height: 43px;
   font-weight: 700;
   margin-bottom: 50px;
 }
@@ -543,7 +544,7 @@ body, html {
 
 @media screen and (max-width: 400px) {
   .contact__part {
-    text-align: left;
+    text-align: left !important;
   }
 }
 

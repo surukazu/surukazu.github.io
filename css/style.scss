@@ -236,6 +236,7 @@ body,html {
 
   &-container_title {
     font-size: 28px;
+    line-height: 43px;
     font-weight: 700;
     margin-bottom: 50px;
   }
@@ -460,7 +461,7 @@ body,html {
   // }
     &__part{
       @media screen and(max-width:400px){
-        text-align: left;
+        text-align: left !important; 
       }
     }
 

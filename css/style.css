@@ -1,12 +1,8 @@
 @charset "UTF-8";
 body {
   font-family: 'Noto Sans JP', sans-serif;
-}
-
-@media screen and (max-width: 780px) {
-  body {
-    overflow-x: hidden !important;
-  }
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .br-sp {
@@ -37,7 +33,7 @@ body {
 .section-title {
   font-size: 32px;
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .section-sub-title {
@@ -56,6 +52,9 @@ body {
   background-color: #fff;
   position: fixed;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__inner {
@@ -91,6 +90,7 @@ body {
 
 .header__logo h1 {
   color: #333;
+  font-size: 27px;
 }
 
 .header__title {
@@ -108,7 +108,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
@@ -193,8 +193,9 @@ body {
   font-size: 32px;
   margin-bottom: 50px;
   line-height: 43px;
-  font-weight: bold;
+  font-weight: 700;
   width: 360px;
+  padding-top: 90px;
 }
 
 @media screen and (max-width: 768px) {
@@ -207,7 +208,7 @@ body {
 .main__text {
   margin-bottom: 55px;
   line-height: 21px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .main__image {
@@ -282,7 +283,7 @@ body {
 
 .features-container_title {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 50px;
 }
 
@@ -331,7 +332,7 @@ body {
   padding-top: 55px;
   padding-bottom: 69px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .price__table {
@@ -344,7 +345,7 @@ body {
   border-collapse: collapse;
   /* セルの線を重ねる */
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 38px;
 }
 
@@ -426,15 +427,18 @@ body {
 }
 
 .blog .flex {
-  margin-right: auto;
-  margin-left: auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
+}
+
+.blog__wrapper {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .blog__box {
-  width: 389px;
+  width: 30%;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
@@ -445,7 +449,12 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
+    width: 387px;
   }
+}
+
+.blog__box:first {
+  margin-left: 5%;
 }
 
 .blog__image {
@@ -459,7 +468,7 @@ body {
   padding-top: 16px;
   text-align: left;
   position: relative;
-  color: #000;
+  color: #333333;
   padding-left: 18px;
 }
 
@@ -525,6 +534,12 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 400px) {
+  .contact__part {
+    text-align: left;
+  }
+}
+
 .contact .section-title {
   margin-bottom: 10px;
 }
@@ -541,7 +556,7 @@ body {
 
 .contact__box {
   width: 908px;
-  color: #000;
+  color: #333333;
   background-color: #fff;
   margin-right: auto;
   margin-left: auto;
@@ -599,7 +614,9 @@ body {
 
 .contact__textarea {
   margin-bottom: 29px;
+  margin-top: 30px;
   background: #eefbfb;
+  width: 783px;
   max-width: 783px;
   height: 179px;
   border: none;
@@ -614,13 +631,14 @@ body {
 .contact .check {
   margin-right: auto;
   margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
   width: 275px;
   margin-bottom: 31px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact .check .checkbox {
@@ -674,22 +692,35 @@ footer h2 {
   font-size: 24px;
 }
 
-footer .flex {
+footer .row {
   margin-bottom: 54px;
   margin-right: auto;
   margin-left: auto;
   display: inline-block;
 }
 
-footer .flex a {
-  color: #000;
+footer .row a {
+  color: #333333;
+  line-height: 28px;
 }
 
-footer .flex .privacy {
+footer .row .privacy {
   margin-right: 80px;
 }
 
-footer .flex p {
+@media screen and (max-width: 768px) {
+  footer .row .privacy {
+    margin-right: 0;
+    margin-bottom: 30px;
+    display: block;
+  }
+}
+
+footer .row .low {
+  min-width: 90px;
+}
+
+footer .row p {
   display: block;
 }
 
@@ -711,7 +742,7 @@ footer .flex p {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 15px;
+  top: 30px;
   right: 20px;
   cursor: pointer;
   z-index: 999;

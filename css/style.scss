@@ -8,9 +8,8 @@ $subColor: #3ba6c9;
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  @media screen and(max-width:780px) {
-    overflow-x: hidden !important;
-  }
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .br-sp {
@@ -57,6 +56,7 @@ body {
   background-color: #fff;
   position: fixed;
   width: 100%;
+  align-items: center;
 
   &__inner {
     width: 1022px;
@@ -79,6 +79,7 @@ body {
     align-items: center;
     & h1{
       color: #333;
+      font-size: 27px;
     }
   }
 
@@ -161,6 +162,7 @@ body {
     line-height: 43px;
     font-weight: 700;
     width: 360px;
+    padding-top: 90px;
     @media screen and (max-width: 768px) {
       margin-right: auto;
       margin-left: auto;
@@ -353,21 +355,27 @@ body {
   }
 
   & .flex {
+    justify-content: space-around;
+  }
+  &__wrapper{
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    justify-content: space-around;
-    width: 100%;
   }
 
   &__box {
-    width: 389px;
+    width: 30%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
     @media screen and(max-width:1110px) {
       margin: 0;
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 30px;
+      width: 387px;
     }
+  }
+  &__box:first{
+    margin-left: 5%;
   }
 
   &__image {
@@ -381,7 +389,7 @@ body {
     padding-top: 16px;
     text-align: left;
     position: relative;
-    color: #000;
+    color: $color;
     padding-left: 18px;
   }
 
@@ -445,6 +453,11 @@ body {
   // @media screen and (max-width:780px){
   //   width: 100vw;
   // }
+    &__part{
+      @media screen and(max-width:400px){
+        text-align: left;
+      }
+    }
 
   & .section-title {
     margin-bottom: 10px;
@@ -461,7 +474,7 @@ body {
 
   &__box {
     width: 908px;
-    color: #000;
+    color: $color;
     background-color: #fff;
     margin-right: auto;
     margin-left: auto;
@@ -510,7 +523,9 @@ body {
 
   &__textarea {
     margin-bottom: 29px;
+    margin-top: 30px;
     background: #eefbfb;
+    width: 783px;
     max-width: 783px;
     height: 179px;
     border: none;
@@ -522,11 +537,11 @@ body {
   & .check {
     margin-right: auto;
     margin-left: auto;
-    margin-right: auto;
-    margin-left: auto;
     width: 275px;
     margin-bottom: 31px;
     display: flex;
+    align-items: center;
+
     & .checkbox {
       width: 20px;
       height: 20px;
@@ -572,16 +587,26 @@ footer {
     font-size: 24px;
   }
 
-  & .flex {
+  & .row {
     margin-bottom: 54px;
     margin-right: auto;
     margin-left: auto;
     display: inline-block;
+    
     & a {
-      color: #000;
+      color: $color;
+      line-height: 28px;
     }
     & .privacy {
       margin-right: 80px;
+      @media screen and (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+        display: block;
+      }
+    }
+    & .low{
+      min-width: 90px;
     }
     & p {
       display: block;
@@ -616,7 +641,7 @@ footer {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 15px;
+  top: 30px;
   right: 20px;
   cursor: pointer;
   z-index: 999;

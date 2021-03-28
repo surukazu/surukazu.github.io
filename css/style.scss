@@ -6,10 +6,15 @@ $contactColor: linear-gradient(to right, #fa41cc, #6020b0);
 $color: #333333;
 $subColor: #3ba6c9;
 
-body {
+body,html {
   font-family: 'Noto Sans JP', sans-serif;
   overflow-x: hidden;
   width: 100%;
+  @media screen and (max-width: 340px) {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
 }
 
 .br-sp {
